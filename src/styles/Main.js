@@ -2,10 +2,11 @@ import styled from 'styled-components'
 import { keyframes } from 'styled-components'
 
 export const MainDiv = styled.div`
-    width: 100%;
+    width: 100vw;
     height: ${props => props.Height};
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     background-color: white;
 `
@@ -16,9 +17,9 @@ export const Container = styled.div`
     height: 100%;
     background: white;
     display: flex;
-    flex-direction: ${props => props.Direction};
-    align-items: ${props => props.Align};
-    justify-content: ${props => props.Justify}
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
 `
 export const Button = styled.button`
     height: 45px;
@@ -31,7 +32,7 @@ export const Button = styled.button`
     color: white;
     padding: 0 30px;
     border-style: none;
-    transition: .8s ease;
+    transition: .3s ease;
     font-weight: bold;
     letter-spacing: .5px;
     :hover{

@@ -1,4 +1,16 @@
 import styled from 'styled-components'
+import { keyframes } from 'styled-components'
+
+export const MainDiv = styled.div`
+    width: 100vw;
+    height: ${props => props.Height};
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    z-index: 10;
+`
 
 export const Container = styled.div`
     width: 100%;
@@ -32,9 +44,22 @@ export const ButtonContainer = styled.div`
 `
 export const NavItemsContainer = styled.div`
     flex: 1;
+    @media (max-width: 600px) {
+        position: absolute;
+        display: ${props => props.display};
+        animation: ${props => props.animation} .3s;
+        top: 82px;
+        z-index: 9;
+        justify-content: center;
+        transition: .4s ease;
+        height: calc(80% - 82px);
+        width: 100%;
+        left: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0));
+    }
 `
-export const NavFlex = styled.div`
-     display: flex;
+export const NavFlex = styled.ul`
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 17px;
@@ -45,8 +70,13 @@ export const NavFlex = styled.div`
         justify-content: flex-end
     }
     @media (max-width: 600px) {
-        position: absolute;
-        top: -100%;
+        flex-direction: column;
+        background: white;
+        justify-content: center;
+        width: 80%; 
+        height: 200px;
+        border-radius: 7px;
+        margin: 20px;
     }
 `
 export const NavItems = styled.a`
@@ -54,6 +84,9 @@ export const NavItems = styled.a`
     padding-bottom: 10px;
     :hover{
         border-bottom: 2px solid #00F990;
+    }
+    @media (max-width: 600px) {
+        color: #2D314D;
     }
 `
 export const MenuContainer = styled.div`
@@ -68,6 +101,21 @@ export const Hammenu = styled.button`
     border-style: none;
     height: 20px;
     width: 30px;
-    background: url(${props => props.background});
-   
+    background: url(${props => props.background}) no-repeat center;
+    background-size: cover;
+`
+
+export const Spawn = keyframes`
+    0%{
+        opacity: 0;
+        top: 50px;   
+    }
+    75%{
+        opacity: 0.2;
+        top: 79px
+    }
+    100%{
+        opacity: 1;
+        top: 82px;
+    }
 `

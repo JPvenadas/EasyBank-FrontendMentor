@@ -1,9 +1,10 @@
 import React from 'react'
-import { 
-        MainDiv, 
+import { useState } from 'react'
+import {  
         Button,
     } from '../styles/Main'
 import {           
+        MainDiv,
         Container, 
         Logo, 
         LogoContainer, 
@@ -12,20 +13,27 @@ import {
         NavItems,
         NavFlex,
         MenuContainer,
-        Hammenu
+        Hammenu,
+        Spawn
     } from '../styles/Nav'
 
 import LogoPic from './../assets/images/logo.svg'
 import Menu from './../assets/images/icon-hamburger.svg'
+import Close from './../assets/images/icon-close.svg'
 
 const Nav = () => {
-  return (
+
+    const [Navstate, SetNavState] = useState(false)
+
+    return (
     <MainDiv Height='82px'>
         <Container>
            <LogoContainer>
             <Logo src={LogoPic}></Logo>
            </LogoContainer>
-        <NavItemsContainer>
+        <NavItemsContainer 
+        animation = {Spawn}
+        display = {Navstate == true? "flex": "none"}>
             <NavFlex>
                 <li>
                     <NavItems href=''>
@@ -58,7 +66,7 @@ const Nav = () => {
             <Button>Request Invite</Button>
         </ButtonContainer>
         <MenuContainer>
-            <Hammenu background={Menu}></Hammenu>
+            <Hammenu onClick={()=>{SetNavState(!Navstate)}} background= {Navstate === true? Close: Menu}></Hammenu>
         </MenuContainer>
         </Container>
     </MainDiv>
