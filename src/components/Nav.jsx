@@ -1,10 +1,10 @@
 import React from 'react'
 import { 
         MainDiv, 
-        Container, 
         Button,
     } from '../styles/Main'
-import { 
+import {           
+        Container, 
         Logo, 
         LogoContainer, 
         ButtonContainer,

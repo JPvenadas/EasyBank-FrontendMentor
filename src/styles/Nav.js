@@ -1,5 +1,17 @@
 import styled from 'styled-components'
 
+export const Container = styled.div`
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 40px;
+    height: 100%;
+    background: white;
+    display: flex;
+    @media (max-width: 600px) {
+        justify-content: space-between
+    }
+`
+
 export const Logo = styled.img`
     width: 140px;
     height: 20px;
@@ -13,6 +25,10 @@ export const ButtonContainer = styled.div`
     display: flex;
     align-items: center;
     height: 100%;
+    @media (max-width: 900px){
+        display:  none
+    };
+    
 `
 export const NavItemsContainer = styled.div`
     flex: 1;
@@ -24,6 +40,14 @@ export const NavFlex = styled.div`
     gap: 17px;
     width: 100%;
     height: 100%;
+    padding: 0 20px;
+    @media (max-width: 900px) {
+        justify-content: flex-end
+    }
+    @media (max-width: 600px) {
+        position: absolute;
+        top: -100%;
+    }
 `
 export const NavItems = styled.a`
     color: #8A8A8A;
@@ -33,14 +57,17 @@ export const NavItems = styled.a`
     }
 `
 export const MenuContainer = styled.div`
-    display: flex;
     align-items: center;
     height: 100%;
+    display: none;
+    @media (max-width: 600px){
+        display: flex;
+    }
 `
 export const Hammenu = styled.button`
     border-style: none;
     height: 20px;
     width: 30px;
     background: url(${props => props.background});
-    display: none;
+   
 `
