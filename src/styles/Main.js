@@ -8,7 +8,8 @@ export const MainDiv = styled.div`
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: ${props=>props.bg};
+    margin: ${props=>props.mg}
 `
 export const Container = styled.div`
     width: 100%;

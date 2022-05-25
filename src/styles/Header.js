@@ -81,6 +81,7 @@ export const InterfaceBg = styled.img`
 export const Tagline = styled.div`
     font-size: 48px;
     width: 379px;
+    color: #223333;
     @media (max-width: 600px) {
         font-size: 40px;
     }
@@ -90,8 +91,10 @@ export const Description = styled.div`
     font-weight: 400;
     line-height: 23px;
     letter-spacing: 0.04em;
-    color: #5B5B5B;
+    color: #848484;
     @media (max-width: 600px) {
         width: 100%;
+        font-size: 15px;
+        padding: 0 10px;
     }
 `
