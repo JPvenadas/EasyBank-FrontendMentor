@@ -7,7 +7,7 @@ import About from './components/About'
 
 const App = () => {
   return (
-    <MainDiv>
+    <MainDiv bg="#fff">
       <Nav/>
       <Header/>
       <About/>

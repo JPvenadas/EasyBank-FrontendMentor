@@ -15,7 +15,7 @@ export const Container = styled.div`
       padding: 0;
     }
     @media (max-width: 600px) {
-        
+        padding-bottom: 75px;
     }
 `
 export const FlexItemLeft = styled.div`

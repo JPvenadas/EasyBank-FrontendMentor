@@ -7,12 +7,19 @@ export const Container = styled.div`
     justify-content: center;
     display: flex;
     flex-direction: column;
+    @media (max-width: 600px) {
+        padding-top: 85px;
+    }
 
 `
 export const Introduction = styled.h1`
     color: #223333;
     font-size: 33px;
-    font-weight: normal
+    font-weight: normal;
+    @media (max-width: 900px) {
+        text-align: center;
+    }
+
 `
 export const Description = styled.div`
     width: 590px;
@@ -20,6 +27,13 @@ export const Description = styled.div`
     line-height: 25px;
     letter-spacing: 0.03em;
     padding: 50px 0 70px 0;
+    @media (max-width: 900px) {
+        align-self: center;
+        width: 100%;
+        max-width: 600px;
+        padding: 40px 0;
+        text-align: center;
+    }
 `
 export const Features = styled.div`
     display: grid;
