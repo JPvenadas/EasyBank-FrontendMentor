@@ -19,6 +19,9 @@ export const Introduction = styled.h1`
     @media (max-width: 900px) {
         text-align: center;
     }
+    @media (max-width: 600px) {
+        font-size: 30px;
+    }
 
 `
 export const Description = styled.div`
@@ -42,19 +45,27 @@ export const Features = styled.div`
     @media (max-width: 900px) {
         grid-template-columns: 50% 50%;
     }
+    @media (max-width: 600px) {
+        grid-template-columns: 100%;
+    }
 `
 export const Feature = styled.div`
     width: 100%;
     display: flex;
     gap: 30px;
-    padding: 10px;
     border-radius: 10px;
     transition: .3s ease;
+    flex-direction: column;
+    padding: 10px 10px 50px 10px;
     :hover{
         background: #d9ecff;
     }
-    flex-direction: column;
-    padding-bottom: 50px;
+    @media (max-width: 600px) {
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        gap: 20px;
+    }
 `
 export const FeatureImg = styled.img`
     width: 72px;
