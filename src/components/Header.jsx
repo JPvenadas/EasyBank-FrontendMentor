@@ -10,6 +10,7 @@ import {
     Description
  } from '../styles/Header'
 import bg from './../assets/images/bg-intro-desktop.svg'
+import bgmobile from './../assets/images/bg-intro-mobile.svg'
 import mockups from './../assets/images/image-mockups.png'
 
 const Header = () => {
@@ -28,7 +29,7 @@ const Header = () => {
                 </Button>
             </FlexItemLeft>
             <FlexItemRight>
-                <Background src={bg}></Background>
+                <Background BackgroundMobile={bgmobile} Background={bg}></Background>
                 <InterfaceBg src={mockups}></InterfaceBg>
             </FlexItemRight>
        </Container>

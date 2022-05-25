@@ -11,10 +11,15 @@ export const Container = styled.div`
     display: flex;
     @media (max-width: 900px) {
       flex-direction: column-reverse;
+      height: auto;
+      padding: 0;
+    }
+    @media (max-width: 600px) {
+        
     }
 `
 export const FlexItemLeft = styled.div`
-    flex: 1;
+    width: 50%;
     max-width: 560px;
     display: flex;
     justify-content: center;
@@ -22,22 +27,42 @@ export const FlexItemLeft = styled.div`
     flex-direction: column;
     height: 600px;
     gap: 40px;
+    @media (max-width: 900px) {
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        padding-top: 30px;
+    }
 `
 export const FlexItemRight = styled.div`
-    flex: 1;
+    width: 50%;
     max-width: 560px;
     position: relative;
     @media (max-width: 900px) {
-        height: 280px;
+        height: 300px;
+        width: 100%;
+        max-width: 100%;
     }
 `
-export const Background = styled.img`
+export const Background = styled.div`
     width: 1168px;
     height: 964px;
+    background: url(${props=>props.Background});
+    background-size: 100% 100%;
     position: absolute;
     z-index: 1;
     top: -550px;
     left: -100px;
+    @media (max-width: 900px) {
+        width: 100%;
+        background-size:100% 340px!important;
+        height: 419px;
+        top: 0px;
+        left: 0px;
+        background: url(${props=>props.BackgroundMobile}) no-repeat;
+    }
 `
 export const InterfaceBg = styled.img`
     position: absolute;
@@ -46,16 +71,27 @@ export const InterfaceBg = styled.img`
     z-index: 2;
     top: -420px;
     left: 130px;
+    @media (max-width: 900px) {
+        top: -120px;
+        left: calc(50% - 167px);
+        width: 335px;
+        height: 417px;
+    }
 `
 export const Tagline = styled.div`
     font-size: 48px;
     width: 379px;
+    @media (max-width: 600px) {
+        font-size: 40px;
+    }
 `
 export const Description = styled.div`
-width: 410px;
-font-weight: 400;
-line-height: 23px;
-letter-spacing: 0.04em;
-color: #5B5B5B;
-
+    width: 410px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.04em;
+    color: #5B5B5B;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
 `

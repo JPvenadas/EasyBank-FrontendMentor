@@ -17,9 +17,9 @@ export const Container = styled.div`
     height: 100%;
     background: white;
     display: flex;
-    @media (max-width: 900px) {
-        flex-direction: column;
-    }
+    flex-direction: ${props => props.Direction};
+    align-items: ${props => props.Align};
+    justify-content: ${props => props.Justify}
 `
 export const Button = styled.button`
     height: 45px;
@@ -37,5 +37,6 @@ export const Button = styled.button`
     letter-spacing: .5px;
     :hover{
         background-position: 100% 0;
+        transform: scale(0.97)
     }
 `
