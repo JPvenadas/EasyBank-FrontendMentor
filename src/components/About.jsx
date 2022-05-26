@@ -1,6 +1,6 @@
 import React from 'react'
-import { MainDiv } from '../styles/Main'
 import { 
+    MainDiv,
     Container,
     Introduction,
     Description,
@@ -20,7 +20,7 @@ const About = () => {
     <MainDiv mg="43px 0 0 0" bg="#f3f3f3">
         <Container>
             <Introduction>
-                Why Choose EasyBank?
+                Why choose EasyBank?
             </Introduction>
             <Description>
             We leverage Open Banking to turn your bank account into your financial hub. control your finances like never before

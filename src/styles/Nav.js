@@ -15,7 +15,7 @@ export const MainDiv = styled.div`
 export const Container = styled.div`
     width: 100%;
     max-width: 1200px;
-    padding: 0 40px;
+    padding: 0 43px;
     height: 100%;
     background: white;
     display: flex;
@@ -62,7 +62,7 @@ export const NavFlex = styled.ul`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 17px;
+    gap: 25px;
     width: 100%;
     height: 100%;
     padding: 0 20px;
@@ -80,7 +80,6 @@ export const NavFlex = styled.ul`
     }
 `
 export const NavItems = styled.a`
-    color: #8A8A8A;
     padding-bottom: 10px;
     :hover{
         border-bottom: 2px solid #00F990;

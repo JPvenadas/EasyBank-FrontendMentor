@@ -7,7 +7,6 @@ export const Container = styled.div`
     height: 100%;
     justify-content: center;
     align-items: center;
-    background: white;
     display: flex;
     @media (max-width: 900px) {
       flex-direction: column-reverse;
@@ -22,18 +21,18 @@ export const FlexItemLeft = styled.div`
     width: 50%;
     max-width: 560px;
     display: flex;
+    padding-top: 50px;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     height: 600px;
-    gap: 40px;
+    gap: 30px;
     @media (max-width: 900px) {
         height: auto;
         max-width: 100%;
         width: 100%;
         text-align: center;
         align-items: center;
-        padding-top: 30px;
     }
 `
 export const FlexItemRight = styled.div`
@@ -47,8 +46,8 @@ export const FlexItemRight = styled.div`
     }
 `
 export const Background = styled.div`
-    width: 1168px;
-    height: 964px;
+    width: 1230px;
+    height: 1020px;
     background: url(${props=>props.Background});
     background-size: 100% 100%;
     position: absolute;
@@ -66,11 +65,11 @@ export const Background = styled.div`
 `
 export const InterfaceBg = styled.img`
     position: absolute;
-    width: 693px;
-    height: 891px;
-    z-index: 2;
+    width: 753px;
+    height: 925px;
+    z-index: 3;
     top: -420px;
-    left: 130px;
+    left: 80px;
     @media (max-width: 900px) {
         top: -120px;
         left: calc(50% - 167px);
@@ -79,19 +78,21 @@ export const InterfaceBg = styled.img`
     }
 `
 export const Tagline = styled.div`
-    font-size: 48px;
-    width: 379px;
-    color: #223333;
+    font-size: 57px;
+    width: 440px;
+    font-weight: lighter;
+    color: #2D314D;
+    letter-spacing: -1.8px;
     @media (max-width: 600px) {
         font-size: 40px;
+        width: 380px;
     }
 `
 export const Description = styled.div`
-    width: 410px;
+    width: 450px;
     font-weight: 400;
-    line-height: 23px;
-    letter-spacing: 0.04em;
-    color: #848484;
+    line-height: 28px;
+    font-size: 18px;
     @media (max-width: 600px) {
         width: 100%;
         font-size: 15px;

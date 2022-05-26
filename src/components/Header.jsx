@@ -15,11 +15,11 @@ import mockups from './../assets/images/image-mockups.png'
 
 const Header = () => {
   return (
-   <MainDiv>
+   <MainDiv bg='#f8f8f8'>
        <Container>
             <FlexItemLeft>
                 <Tagline>
-                Next Generation digital Banking
+                Next generation digital Banking
                 </Tagline>
                 <Description>
                 Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving budgeting, investing and much more

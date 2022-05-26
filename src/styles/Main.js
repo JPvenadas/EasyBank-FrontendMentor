@@ -24,17 +24,18 @@ export const Container = styled.div`
 `
 export const Button = styled.button`
     height: 45px;
-    background: linear-gradient(to right, #00F990, #25C3F5,#00F990);
+    background: linear-gradient(to right, #06D17C, #24B8E7,#06D17C);
     background-size: 200%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 45px;
     color: white;
-    padding: 0 30px;
+    padding: 0px 35px;
     border-style: none;
     transition: .3s ease;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: bolder;
     letter-spacing: .5px;
     :hover{
         background-position: 100% 0;

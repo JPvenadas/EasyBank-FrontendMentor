@@ -1,9 +1,22 @@
 import styled from "styled-components";
 
+export const MainDiv = styled.div`
+    width: 100vw;
+    height: ${props => props.Height};
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: ${props=>props.bg};
+    margin: ${props=>props.mg};
+    position: relative;
+    z-index: 2;
+`
+
 export const Container = styled.div`
     width: 100%;
     max-width: 1200px;
-    padding:60px 40px 70px 40px;
+    padding:120px 40px 70px 40px;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -13,8 +26,8 @@ export const Container = styled.div`
 
 `
 export const Introduction = styled.h1`
-    color: #223333;
-    font-size: 33px;
+    color: #2D314D;
+    font-size: 40px;
     font-weight: normal;
     @media (max-width: 900px) {
         text-align: center;
@@ -25,11 +38,11 @@ export const Introduction = styled.h1`
 
 `
 export const Description = styled.div`
-    width: 590px;
+    width: 650px;
     color: #848484;
     line-height: 25px;
-    letter-spacing: 0.03em;
-    padding: 50px 0 70px 0;
+    font-size: 18px;
+    padding: 30px 0 60px 0;
     @media (max-width: 900px) {
         align-self: center;
         width: 100%;
@@ -41,7 +54,7 @@ export const Description = styled.div`
 export const Features = styled.div`
     display: grid;
     grid-template-columns: repeat(4,calc(25% - 7px));
-    gap: 10px;
+    gap: 20px;
     @media (max-width: 900px) {
         grid-template-columns: 50% 50%;
     }
@@ -70,14 +83,19 @@ export const Feature = styled.div`
 export const FeatureImg = styled.img`
     width: 72px;
     height: 72px;
+    margin-bottom: 10px;
+    @media (max-width: 900px) {
+        margin-bottom: 0
+    }
 `
 export const FeatureTitle = styled.h3`
     font-weight: normal;
-    font-size: 23px;
+    font-size: 25px;
     color: #223333;
 `
 export const FeatureDescription = styled.p`
     color: #848484;
     line-height: 25px;
-    letter-spacing: 0.03em;
+    font-size: 17px;
+    letter-spacing: -.6px;
 `
