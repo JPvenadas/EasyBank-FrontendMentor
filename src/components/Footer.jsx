@@ -24,23 +24,23 @@ const Footer = () => {
           <FooterCorner gap="50px" align="flex-start">
             <Logo src={Logopic}></Logo>
             <Socials>
-              <Links src={facebook}></Links>
-              <Links src={youtube}></Links>
-              <Links src={twitter}></Links>
-              <Links src={pinterest}></Links>
-              <Links src={instagram}></Links>
+              <a href="#"><Links src={facebook}></Links></a>
+              <a href="#"><Links src={youtube}></Links></a>
+              <a href="#"><Links src={twitter}></Links></a>
+              <a href="#"><Links src={pinterest}></Links></a>
+              <a href="#"><Links src={instagram}></Links></a>
             </Socials>
           </FooterCorner>
           <FooterCenter>
               <Footernav>
-                <a href=""><Text color="#fff">About Us</Text></a>
-                <a href=""><Text color="#fff">Contact</Text></a>
-                <a href=""><Text color="#fff">Blog</Text></a> 
+                <a href="#"><Text color="#fff">About Us</Text></a>
+                <a href="#"><Text color="#fff">Contact</Text></a>
+                <a href="#"><Text color="#fff">Blog</Text></a> 
               </Footernav>
               <Footernav>
-                <a href=""><Text color="#fff">Careers</Text></a>
-                <a href=""><Text color="#fff">Support</Text></a>
-                <a href=""><Text color="#fff">Privacy Policies</Text></a>
+                <a href="#"><Text color="#fff">Careers</Text></a>
+                <a href="#"><Text color="#fff">Support</Text></a>
+                <a href="#"><Text color="#fff">Privacy Policies</Text></a>
               </Footernav>
           </FooterCenter>
           <FooterCorner gap="30px" align="flex-end">

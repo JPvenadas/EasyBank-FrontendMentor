@@ -33,7 +33,7 @@ const Nav = () => {
            </LogoContainer>
         <NavItemsContainer 
         animation = {Spawn}
-        display = {Navstate == true? "flex": "none"}>
+        display = {Navstate === true? "flex": "none"}>
             <NavFlex>
                 <li>
                     <NavItems href=''>
