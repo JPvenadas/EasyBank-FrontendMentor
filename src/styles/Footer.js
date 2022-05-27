@@ -63,5 +63,4 @@ export const Footernav = styled.div`
         align-items: center;
         height: auto;
     }
-  
 `

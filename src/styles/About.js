@@ -16,7 +16,7 @@ export const MainDiv = styled.div`
 export const Container = styled.div`
     width: 100%;
     max-width: 1200px;
-    padding:120px 40px 70px 40px;
+    padding:120px 40px 60px 40px;
     justify-content: center;
     display: flex;
     flex-direction: column;
