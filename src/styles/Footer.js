@@ -44,7 +44,7 @@ export const Links = styled.img`
     width: 20px;
     height: 20px
 `
-export const Text = styled.p`
+export const Text = styled.div`
     color: ${props=>props.color}
 `
 export const Footernav = styled.div`
