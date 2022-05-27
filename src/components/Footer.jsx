@@ -33,14 +33,14 @@ const Footer = () => {
           </FooterCorner>
           <FooterCenter>
               <Footernav>
-                <a href="#"><Text color="#fff">About Us</Text></a>
-                <a href="#"><Text color="#fff">Contact</Text></a>
-                <a href="#"><Text color="#fff">Blog</Text></a> 
+                <a href="https://slidespuzzle.netlify.app/"><Text color="#fff">About Us</Text></a>
+                <a href="https://slidespuzzle.netlify.app/"><Text color="#fff">Contact</Text></a>
+                <a href="https://slidespuzzle.netlify.app/"><Text color="#fff">Blog</Text></a> 
               </Footernav>
               <Footernav>
-                <a href="#"><Text color="#fff">Careers</Text></a>
-                <a href="#"><Text color="#fff">Support</Text></a>
-                <a href="#"><Text color="#fff">Privacy Policies</Text></a>
+                <a href="https://slidespuzzle.netlify.app/"><Text color="#fff">Careers</Text></a>
+                <a href="https://slidespuzzle.netlify.app/"><Text color="#fff">Support</Text></a>
+                <a href="https://slidespuzzle.netlify.app/"><Text color="#fff">Privacy Policies</Text></a>
               </Footernav>
           </FooterCenter>
           <FooterCorner gap="30px" align="flex-end">

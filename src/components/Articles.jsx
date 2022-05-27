@@ -13,7 +13,7 @@ const Articles = () => {
         <Container>
             <Title>Latest Articles</Title>
             <ArticleSection>
-              <a href="#">
+              <a href="https://slidespuzzle.netlify.app/">
                 <ArticleItem 
                 image={img1}
                 author="By Claire Ronbinsons"
@@ -21,7 +21,7 @@ const Articles = () => {
                 description="The world is getting smaller and we're becoming more mobile. So why shoud you be forced to only receive money in a single..."
                 />
               </a>
-              <a href="#">
+              <a href="https://slidespuzzle.netlify.app/">
                 <ArticleItem 
                 image={img2}
                 author="By Wilson Hutton"
@@ -29,7 +29,7 @@ const Articles = () => {
                 description="Our simple Budgeting feature allows you to separate out your spending and set realistic limits each month. that means you..."
                 />
               </a>
-              <a href="#">
+              <a href="https://slidespuzzle.netlify.app/">
                 <ArticleItem 
                 image={img3}
                 author="By Wilson Hutton"
@@ -37,7 +37,7 @@ const Articles = () => {
                 description="We want you to enjoy your travels. This is why we don't charge any fees on purchases while you're abroad. We'll even show you..."
                 />
               </a>
-              <a href="#">
+              <a href="https://slidespuzzle.netlify.app/">
                 <ArticleItem
                   image={img4}
                   author="By Claire Ronbinsons"
