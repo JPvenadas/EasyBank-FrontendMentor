@@ -5,6 +5,7 @@ import Nav from './components/Nav'
 import Header from './components/Header'
 import About from './components/About'
 import Articles from './components/Articles'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Header/>
       <About/>
       <Articles/>
+      <Footer/>
     </MainDiv>
   )
 }
